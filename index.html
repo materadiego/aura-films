@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AURA Films</title>
+    <link rel="icon" href="./images/popcorn-icon2.svg">
     <link rel="stylesheet" href="./styles/app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +15,120 @@
     />
   </head>
   <body>
-    <h1>AURA Films</h1>
-    <p>A movie application</p>
+    <!-- <header class="header-container" id="header">
+      <span class="header-arrow inactive"></span>
+      <h1 class="header-title">AURA Films</h1>
+      <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+      <form action="" id="searchForm" class="header-searchForm">
+        <input type="text" placeholder="Buscar" />
+        <button><img src="./images/search.svg" /></button>
+      </form>
+    </header> -->
+    <header id="header" class="header-container">
+      <span class="header-arrow inactive">&lt;</span>
+      <h1 class="header-title"><img src="./images/popcorn-icon2.svg" alt="Logo">Aura Films</h1>
+      <h1 class="header-title header-title--categoryView inactive"></h1>
+      <form id="searchForm" class="header-searchForm">
+        <input type="text" placeholder="Buscar" />
+        <button id="searchBtn"><img src="./images/search-white.svg" class="searchBt" alt="Search"></button>
+      </form>
+    </header>
+    <section id="trendingPreview" class="trendingPreview-container">
+      <div class="trendingPreview-header">
+        <h2 class="trendingPreview-title">Tendencias</h2>
+        <button class="trendingPreview-btn">Ver más</button>
+      </div>
+      <article class="trendingPreview-movieList">
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+        <div class="movie-container movie-container--loading"></div>
+
+      </article>
+    </section>
+    <section id="categoriesPreview" class="categoriesPreview-container">
+      <h2 class="categoriesPreview-title">Categorías</h2>
+      <article class="categoriesPreview-list">
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        <div class="category-container category-container--loading"></div>
+        
+      </article>
+    </section>
+
+<section id="liked" class="liked-container">
+  <div class="liked-header">
+    <h2 class="liked-title">Peliculas favoritas</h2>
+  </div>
+  <article class="liked-movieList">
+     <div class="movie-container">
+            <img
+              src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+              class="movie-img"
+              alt="Nombre de la película"
+            />
+          </div>
+          
+  </article>
+</section>
+
+    <section id="genericList" class="genericList-container inactive">
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      <div class="movie-container--loading"></div>
+      
+    </section>
+    <section id="movieDetail" class="movieDetail-container inactive">
+      <h1 class="movieDetail-title"></h1>
+      <span class="movieDetail-score"></span>
+      <p class="movieDetail-description">
+       
+      </p>
+      <article class="categories-list">
+        <div class="category-container">
+          <h3 id="id28" class="category-title"></h3>
+        </div>
+        <div class="category-container">
+          <h3 id="id16" class="category-title"></h3>
+        </div>
+        <div class="category-container">
+          <h3 id="id14" class="category-title"></h3>
+        </div>
+      </article>
+      <article class="relatedMovies-container">
+        <h2 class="relatedMovies-title">Películas similares</h2>
+        <div class="relatedMovies-scrollContainer">
+          <div class="movie-container">
+            <!-- <img
+              src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+              class="movie-img"
+              alt="Nombre de la película"
+            />
+          </div> -->
+         
+        </div>
+      </article>
+    </section>
+    <footer>Hecho por @materadiego</footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/nodes.js"></script>
     <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
   </body>
 </html>
