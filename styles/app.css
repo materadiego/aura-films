@@ -652,9 +652,8 @@ h1.notFoundMovieTitle {
 .genericList-container .movie-container {
   display: inline-block;
   width: 46.5%;
-  height: 63vw;
-  overflow: hidden;
-  margin-bottom: 5vw;
+  height: 61vw;
+  margin-bottom: 10vw;
 }
 
 .genericList-container .movie-container--loading {
