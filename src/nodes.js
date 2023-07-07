@@ -7,6 +7,7 @@ const categoriesPreviewSection = $("#categoriesPreview");
 const genericSection = $("#genericList");
 const movieDetailSection = $("#movieDetail");
 const likedMoviesSection = $("#liked");
+const footer = $("footer");
 
 // Lists & Containers
 const searchForm = $("#searchForm");
@@ -15,6 +16,7 @@ const categoriesPreviewList = $(".categoriesPreview-list");
 const movieDetailCategoriesList = $("#movieDetail .categories-list");
 const relatedMoviesContainer = $(".relatedMovies-scrollContainer");
 const likedMoviesListArticle = $(".liked-movieList");
+const categoriesList = $(".categories-list");
 
 // Elements
 const headerTitle = $(".header-title");

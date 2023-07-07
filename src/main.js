@@ -28,6 +28,7 @@ function likeMovie(movie) {
   console.log(likedMovies);
   if (likedMovies[movie.id]) {
     likedMovies[movie.id] = undefined;
+    getTrendingMoviesPreview();
   } else {
     likedMovies[movie.id] = movie;
   }
@@ -87,6 +88,7 @@ function createMovies(
 
     const movieBtn = document.createElement("button");
     movieBtn.classList.add("movie-btn");
+
     likedMoviesList()[movie.id] &&
       movieBtn.classList.toggle("movie-btn--liked");
     movieBtn.addEventListener("click", () => {
